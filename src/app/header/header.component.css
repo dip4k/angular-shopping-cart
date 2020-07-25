@@ -1,0 +1,23 @@
+.header {
+  position: sticky;
+  height: auto;
+  background: tomato;
+  color: white;
+  padding: 10px 20px;
+}
+
+.header.header-list {
+  margin: 10 5px;
+  display: inline-block;
+}
+
+.header .header-list .header-list-item {
+  display: inline;
+  list-style: none;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.header-list-item + .header-list-item {
+  margin: 0 20px;
+}
