@@ -40,3 +40,7 @@ angular shopping cart application
   ```sh
     ng serve -o
   ```
+
+### running pic
+
+![Project pic]("project_pic.png")
