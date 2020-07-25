@@ -43,4 +43,4 @@ angular shopping cart application
 
 ### running pic
 
-![Project pic]("project_pic.png")
+![Project pic](project_pic.png)
