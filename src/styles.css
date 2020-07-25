@@ -1,4 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.container {
+  padding: 0.5rem 1rem;
+}
+
+.container > div + div {
+  margin-top: 20px;
+}
+
+input {
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid purple;
+  margin: 5px;
+}
+
+input:focus {
+  border: none;
+  border-bottom: 2px solid #9e840b;
+  outline: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-left-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.img-container {
+  border: 5px solid #aaa;
+  padding: 0.5rem;
+  border-radius: 5px;
+  padding-bottom: 0;
+}
+
+.btn {
+  padding: 5px;
+  min-width: 3rem;
+  border: 2px solid cadetblue;
+  border-radius: 5px;
+  font-family: Roboto;
+  margin: 0 5px;
+}
+
+.form-label {
+  color: #666;
+  font-size: 16px;
+  margin: 0.5rem 0.5rem 0;
+}
+
+.badge {
+  background: purple;
+  padding: 10px;
+  border-radius: 50%;
+}

@@ -1,13 +1,17 @@
 <!-- create cart item -->
-<form action="">
-  <div>
-    <label for="">Name</label>
+<form action="" autocomplete="off">
+  <div class="container">
+    <label for="" class="form-label">Name : </label>
     <input type="text" [(ngModel)]="cartItem.Name" [name]="'name'" />
-    <label for="">Description</label>
+
+    <label for="" class="form-label">Description : </label>
     <input type="text" [(ngModel)]="cartItem.Description" name="description" />
-    <label for="">Cost</label>
-    <input type="text" [(ngModel)]="cartItem.Price" name="price" />
-    <br />
-    <button type="button" (click)="addToCartList($event)">Create</button>
+
+    <label for="" class="form-label">Cost : </label>
+    <input type="number" [(ngModel)]="cartItem.Price" name="price" />
+
+    <button class="btn" type="button" (click)="addToCartList($event)">
+      Create
+    </button>
   </div>
 </form>

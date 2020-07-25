@@ -1,8 +1,27 @@
 <!-- preview -->
-<div>
-  <ul *ngFor="let item of cartItemList">
-    <li>{{ item.Name }}</li>
-    <li>{{ item.Description }}</li>
-    <li>{{ item.Price }}</li>
-  </ul>
+<div class="container">
+  <div
+    *ngFor="let item of cartItemList; let i = index"
+    class="d-flex-left-right"
+  >
+    <div style="min-width: 10rem;">
+      <h2>{{ item.Name }}</h2>
+      <p>{{ item.Description }}</p>
+      <span style="font-size: 16px;">$ {{ item.Price }}</span>
+    </div>
+    <div class="img-container">
+      <img
+        style="width: 300px;"
+        [src]="
+          i % 2 == 0
+            ? 'https://source.unsplash.com/random/400x300'
+            : 'https://source.unsplash.com/random/600x450'
+        "
+        alt=""
+      />
+    </div>
+
+    <br />
+    <br />
+  </div>
 </div>
